@@ -92,3 +92,22 @@ html, body{
     100%{transform: translateY(0px);}
   }
 
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.project-card{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#card-img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#card-desc{
+    grid-row-start: 2;
+    grid-row-end: 3;}

@@ -19,9 +19,15 @@ function App() {
       </div>
 
       <div className="projects">
-        <div className="project-card">
-          <img src={img1} id="project-img"/>
+        <div className="project-card" id="card-1">
+          <img src={img1} id="card-img"/>
+          <p id="card-desc">this is a descrption</p>
+
         </div>
+        {/* <div className="project-card" id="card-2">
+          <img src={img1} id="card-img"/>
+          <p id="card-desc">this is a descrption</p>
+        </div> */}
       </div>
     </div>
   );
