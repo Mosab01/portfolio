@@ -1,7 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 html, body{
     margin: 0;
     padding: 0;
     background-color: #2C3639;
+    overflow-x: hidden;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .nav-bar{
@@ -33,6 +47,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .hello-main{
@@ -68,6 +83,7 @@ html, body{
     color: #A27B5C;
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 @keyframes mymove {
@@ -75,3 +91,36 @@ html, body{
     50% {transform: translateY(-20px);}
     100%{transform: translateY(0px);}
   }
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    background-color: #DCD7C9;
+}
+
+.project-card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#project-img{
+    background-image: url("./imgs/poroject_img.jpg");
+    height: 426px;
+    width: 640px;
+    object-fit: cover;
+    scale: 1;
+}
+
+#project-desc{
+    position: absolute;
+    font-size: 3vh;
+    color: #A27B5C;
+    font-weight: bolder;
+    right: 10%;
+}
