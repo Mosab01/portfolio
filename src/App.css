@@ -8,7 +8,6 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: #2C3639;
-    overflow-x: hidden;
 }
 
 .App{
@@ -93,21 +92,20 @@ html, body{
   }
 
 .projects{
+    height: inherit;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    grid-template-rows: 1fr 1fr;
 }
 
 .project-card{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-#card-img{
-    grid-row-start: 1;
-    grid-row-end: 3;
+    position: relative;
+    justify-content: center;
 }
 
 #card-desc{
-    grid-row-start: 2;
-    grid-row-end: 3;}
+    position: absolute;
+    bottom: 0%;
+    color: #DCD7C9;
+    font-size: 5vh;
+}
