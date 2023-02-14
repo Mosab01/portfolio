@@ -1,20 +1,19 @@
 *{
-    margin: 0;
     padding: 0;
 }
-
 
 html, body{
     margin: 0;
     padding: 0;
     background-color: #2C3639;
+    width: 100%;
+    height: 100%;
 }
 
 .App{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+    margin:0;
+    padding: 0;
+    width: 100vw;
 }
 
 .nav-bar{
@@ -41,12 +40,13 @@ html, body{
 }
 
 .main-page{
+    margin:0;
+    padding: 0;
     width: 100vw;
     height: 93vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .hello-main{
@@ -60,7 +60,7 @@ html, body{
 }
 
 #hello{
-    width: fit-content;
+    width: 100vw;
     font-size: 10vh;
     font-family: cursive;
     color: #DCD7C9;
@@ -92,26 +92,15 @@ html, body{
   }
 
 .projects{
-    height: inherit;
+    height: 100vh;
+    width: 80vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 
 .project-card{
-    position: relative;
+    width:40vw;
     justify-content: center;
     transition: scale 1s;
-}
-
-/* .project-card:hover{
-    scale: 0.9;
-} */
-
-#card-desc{
-    position: absolute;
-    bottom: 0%;
-    color: #DCD7C9;
-    font-size: 5vh;
-    display: none;
+    border: solid white 2px;
 }
