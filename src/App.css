@@ -1,7 +1,6 @@
 *{
-    padding: 0;
+    box-sizing: border-box;
 }
-
 html, body{
     margin: 0;
     padding: 0;
@@ -13,94 +12,5 @@ html, body{
 .App{
     margin:0;
     padding: 0;
-    width: 100vw;
-}
-
-.nav-bar{
-    width: 100vw;
-    height: 7vh;
-    display: flex;
-    justify-content: center;
-}
-
-#nav-about, #nav-projects{
-    background-color: transparent;
-    min-width: 100px;
-    font-size: larger;
-    font-weight: bold;
-    color: #A27B5C;
-    border: 0;
-    border-bottom: #2C3639 3px solid;
-    cursor: pointer;
-    transition: border 0.5s;
-}
-
-#nav-about:hover, #nav-projects:hover{
-    border-bottom: #A27B5C 3px solid;
-}
-
-.main-page{
-    margin:0;
-    padding: 0;
-    width: 100vw;
-    height: 93vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hello-main{
-    width: 70%;
-    font-family: monospace;
-    color: #A27B5C;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-#hello{
-    width: 100vw;
-    font-size: 10vh;
-    font-family: cursive;
-    color: #DCD7C9;
-    margin: 0;
-    padding: 0;
-}
-
-#about-sec{
-    font-size: 3vh;
-    font-weight: bolder;
-    margin-bottom: 25vh;
-}
-
-#scroll-down{
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    animation: mymove 2s infinite;
-    color: #A27B5C;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
-
-@keyframes mymove {
-    0% {transform: translateY(0px);}
-    50% {transform: translateY(-20px);}
-    100%{transform: translateY(0px);}
-  }
-
-.projects{
-    height: 100vh;
-    width: 80vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.project-card{
-    width:40vw;
-    justify-content: center;
-    transition: scale 1s;
-    border: solid white 2px;
+    width: 100%;
 }
