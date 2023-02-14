@@ -1,0 +1,122 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "Header Header"
+    "Contact-Forum Help"
+    ;
+    background-color: #DCD7C9;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.contact h1{
+    font-size: 70px;
+    color: #2C3639;
+    grid-area: Header;
+}
+
+.contact-forum{
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template-areas:
+    "Full-Name Email-Adress"
+    "Messege-Subject Messege-Subject"
+    "Messege Messege"
+    "Send-btn Send-btn"
+    ;
+}
+
+@media only screen and (max-width: 550px){
+    .contact{
+    grid-template-areas: 
+    "Header Header"
+    "Contact-Forum Contact-Forum"
+    "Help Help"
+    ;
+    }
+}
+
+.contact-forum input{
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 0px;
+    border: 0;
+    color: #2C3639;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    border-radius: 10px;
+
+    transition: box-shadow .5s;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: rgb(0, 0, 0) 0px 2px 0px;
+}
+
+input::placeholder {
+    color: #2C3639;
+    font-family: monospace;
+    opacity: .7;
+}
+
+#full-name{
+    grid-area: Full-Name;
+    width: 95%;
+}
+
+#email-adress{
+    grid-area: Email-Adress;
+}
+
+#messege-subject{
+    grid-area: Messege-Subject;
+}
+
+#messege{
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 0px;
+    border: 0;
+    color: #2C3639;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    resize:none;
+}
+
+textarea:focus{
+    outline: none;
+    box-shadow: rgb(0, 0, 0) 0px 6px 0px;
+}
+
+#send-btn{
+    width: 35%;
+    grid-area: Send-btn;
+    background-color: transparent;
+    border: 0;
+    color: #2C3639;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 100%;
+    opacity: .7;
+    cursor: pointer;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#send-btn:hover{
+    opacity: 1;
+}
+
+#send-btn:active{
+    border: rgba(0, 0, 0, 0.17) 1px solid;
+}

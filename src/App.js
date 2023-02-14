@@ -2,6 +2,7 @@ import "./App.css";
 import Projects from "./components/Projects";
 import Main_page from "./components/Main_page";
 import NavBar from "./components/NavBar";
+import Contact from "./components/Contact";
 
 
 export default function App() {
@@ -10,18 +11,8 @@ export default function App() {
       <NavBar/>
       <Main_page/>
       <Projects/>
+      <Contact/>
 
-      <div className="contact">
-        <h1>Say Hello</h1>
-        <div className="contact-forum">
-          <input id="full-name" placeholder="Full Name"/>
-          <input id="email-adress" placeholder="Email Adress"/>
-          <input id="messege-subject" placeholder="Messege Subject"/>
-          <input id="messege" placeholder="Messge"/>
-
-          <button id="send-btn">SEND</button>
-        </div>
-      </div>
     </div>
   );
 }

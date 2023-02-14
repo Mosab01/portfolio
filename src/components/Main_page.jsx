@@ -17,7 +17,7 @@ export default function main_page(){
                     I'm Mosab, a full stack developer, who's passionate about creating beautfull and intreactive UI 
                 </p>
 
-                <Link to="card-1" smooth={true} duration={800}><img src={arrow} id="scroll-down"/></Link>
+                <Link to="contact" smooth={true} duration={800}><img src={arrow} id="scroll-down"/></Link>
 
             </div>
     </div>
