@@ -6,6 +6,8 @@
 }
 
 #nav-about, #nav-projects{
+    text-align: center;
+    padding: 20px;
     background-color: transparent;
     min-width: 100px;
     font-size: larger;
