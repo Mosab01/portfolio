@@ -4,14 +4,15 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #2C3639;
+    background-color: #222831;
     width: 100%;
     height: 100%;
+    font-family: arial;
 }
 
 .App{
     margin:0;
     padding: 0;
     width: 100%;
+    position: relative;
 }
-

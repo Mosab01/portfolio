@@ -8,11 +8,10 @@ import Contact from "./components/Contact";
 export default function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Main_page/>
-      <Projects/>
-      <Contact/>
-
+      <NavBar />
+      <Main_page />
+      <Projects />
+      <Contact />
     </div>
   );
 }
