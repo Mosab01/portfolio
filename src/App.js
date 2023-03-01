@@ -9,9 +9,12 @@ export default function App() {
   return (
     <div className="App">
       <NavBar />
+      <main>
       <Main_page />
       <Projects />
       <Contact />
+      </main>
+
     </div>
   );
 }
