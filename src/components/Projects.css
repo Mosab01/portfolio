@@ -1,61 +1,133 @@
-.projects{
+.projects {
     height: 100%;
     width: 80%;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.project-card{
     display: flex;
-    position: relative;
-    max-width: 100%;
-    height: 70vh;
-    transition: scale 1s;
-    border: solid white 2px;
+    margin-bottom: 1vh;
 }
 
-#card-img{
+.project-card {
+    display: flex;
+    width: 100%;
+    /* border: solid white 2px; */
+}
+
+#project-image {
+    width: 50%;
+    position: relative;
+}
+
+#card-img {
     aspect-ratio: 1/1;
     object-fit: cover;
-    width: 1fr;
+    width: 100%;
     height: 100%;
-    z-index: -1;
 }
 
-#project-info{
-    width: 1fr;
+#img-mask {
+    background: linear-gradient(#00adb3, rgb(177, 225, 236));
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: opacity .5s;
+}
+
+#img-mask:hover {
+    opacity: 0;
+}
+
+#project-info {
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin-left: 5%;
 }
 
-#project-name{
+#project-name {
+    right: 0;
     color: #EEEEEE;
 }
 
-#project-desc{
+#project-desc {
     color: #EEEEEE;
     opacity: .6;
-    border-left : #EEEEEE solid 1px;
+    border-left: #EEEEEE solid 1px;
+    border-right: #EEEEEE solid 1px;
     border-radius: 10px;
     margin-right: 5%;
     margin-top: 0;
     padding: 3%;
+    background-color: #000000;
+    opacity: 0.3;
 }
 
-#h2{
+#h2 {
     color: #00adb3;
-    font-size: 1vw;
-    /* opacity: .6; */
-    margin-bottom: 3px;
-    margin-left: 10px;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 
-#tech-used{
+#tech-used-p{
+    font-size: 2vh;
+    color: #00adb3;
+}
+
+#tech-used {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
-#tech-imgs{
-    width: 20px;
+#tech-imgs {
+    width: 40px;
+    padding-bottom: 20px;
+    border-bottom: #393E46 solid 1px;
+}
+
+#project-btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15%;
+}
+
+#project-btns button {
+    background: transparent;
+    color: #EEEEEE;
+    font-size: 2vh;
+    border-radius: 10px;
+    border: 1px solid #00adb3;
+    height: 6vh;
+    width: 12vh;
+    cursor: pointer;
+    transition: color .3s;
+    transition: background .3s;
+}
+
+#project-btns button:hover {
+    background: #EEEEEE;
+    color: #00adb3;
+}
+
+@media only screen and (max-width: 550px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    #project-image {
+        width: 100%;
+    }
+
+    #project-info {
+        width: 100%;
+    }
+
+    #project-name {
+        padding-left: 0;
+    }
+
+    #tech-imgs {
+        width: 25px;
+    }
 }

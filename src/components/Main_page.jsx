@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../images/arrow.svg";
+import arrow from "../svgs/arrow.svg";
 import { Link } from "react-scroll";
 import "./Main-page.css";
 
