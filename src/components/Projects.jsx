@@ -34,8 +34,8 @@ export default function Projects() {
                         <img id="tech-imgs" alt="React" src={html_icon} />
                     </div>
                     <div id="project-btns">
-                        <button>Github</button>
-                        <button>Live Demo</button>
+                        <a href="https://github.com/Mosab01/weather" target="_blank" >Github</a>
+                        <a>Live Demo</a>
 
                     </div>
                 </div>
