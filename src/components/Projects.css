@@ -2,17 +2,26 @@
     height: 100%;
     width: 80%;
     display: flex;
+    flex-direction: column;
     margin-bottom: 1vh;
 }
 
 .project-card {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    /* border: solid white 2px; */
+    border-bottom: solid 1px #393E46;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#card-2{
+    flex-direction: row-reverse;
 }
 
 #project-image {
-    width: 50%;
+    width: 35%;
+    height: 75%;
     position: relative;
 }
 
@@ -77,11 +86,10 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 30px;
-    padding-bottom: 20px;
 }
 
 #tech-imgs {
-    width: 10%;
+    width: 5%;
     padding-bottom: 20px;
     border-bottom: #393E46 solid 1px;
 }
@@ -89,13 +97,13 @@
 #project-btns {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 #project-btns a {
     text-decoration: 0;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 10px;
     background: transparent;
     color: #EEEEEE;
     font-size: 2vh;
